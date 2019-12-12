@@ -3,7 +3,7 @@ package com.codingwithset.currencysign;
 import android.content.Context;
 
 public class CurrencySign {
-    private static String inNaira(Context context, String price) {
+     static String inNaira(Context context, String price) {
         String actualPrice = Utils.formatPrice(context, price);
         String format = String.format("₦%1$s",actualPrice);
         return format;
