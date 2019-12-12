@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CurrencySign</string>
+    <string name="product_price"> ₦%1$s</string>
+    <string name="pattern">#,###.00</string>
 </resources>
