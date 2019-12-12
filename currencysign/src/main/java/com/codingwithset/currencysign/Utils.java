@@ -14,6 +14,6 @@ public class Utils {
     }
     public static String inNaira(Context context, String price) {
         String actualPrice = Utils.formatPrice(context, price);
-        return String.format("₦%1$s",actualPrice);
+        return String.format(context.getString(R.string.naira_sign),actualPrice);
     }
 }
