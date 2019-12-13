@@ -31,15 +31,10 @@ How to use this library:
 
 in your xml:
 
-<EditText
-        android:id="@+id/edt_price"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+EditText
+   android:inputType="number" 
+   make sure you include above line for your price edittext.
+       
 	
 	
 	
