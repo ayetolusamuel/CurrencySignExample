@@ -1,6 +1,38 @@
 <resources>
     <string name="app_name">CurrencySign</string>
     <string name="product_price"> ₦%1$s</string>
-    <string name="pattern">#,###.00</string>
+    <string name="pattern">#,###</string>
     <string name="naira_sign">₦%1$s</string>
+    <string name="dollar_sign">$%1$s</string>
+    <string name="euro_sign">€%1$s</string>
+    <string name="cedis_sign">¢%1$s</string>
+    <string name="pound_sign">£%1$s</string>
+    <string name="rupee_sign">₹%1$s</string>
+    <string name="yen_sign">¥%1$s</string>
+    <string name="jamaica_dollar_sign">J$%1$s</string>
+    <string name="won_sign">₩%1$s</string>
+    <string name="denar_sign">ден%1$s</string>
+    <string name="ringgit_sign">ден%1$s</string>
+    <string name="rupiah_sign">Rp%1$s</string>
+    <string name="peso_dollar_sign">$%1$s</string>
+    <string name="lek_sign">Lek%1$s</string>
+    <string name="afghani_sign">؋%1$s</string>
+    <string name="guilder_sign">ƒ%1$s</string>
+    <string name="manat_sign">₼%1$s</string>
+    <string name="belize_dollar_sign">BZ$%1$s</string>
+    <string name="boliviano_sign">$b$%1$s</string>
+    <string name="convertible_marka_sign">KM$%1$s</string>
+    <string name="pula_sign">P$%1$s</string>
+    <string name="lev_sign">лв$%1$s</string>
+    <string name="real_sign">R$$%1$s</string>
+    <string name="riel_sign">៛$%1$s</string>
+    <string name="yuan_renminbi_sign">¥$%1$s</string>
+    <string name="colon_sign">₡$%1$s</string>
+    <string name="kuna_sign">kn$%1$s</string>
+    <string name="peso_sign">₱$%1$s</string>
+    <string name="koruna_sign">Kč$%1$s</string>
+    <string name="krone_sign">kr$%1$s</string>
+    <string name="peso_dominican_sign">RD$$%1$s</string>
+
+
 </resources>
