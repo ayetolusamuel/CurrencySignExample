@@ -32,8 +32,10 @@ How to use this library:
 in your xml:
 
 EditText
-   android:inputType="number" 
-   make sure you include above line for your price edittext.
+
+    
+   
+   make sure you include (android:inputType="number") to your price edittext.
        
 	
 	
