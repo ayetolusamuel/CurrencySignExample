@@ -52,6 +52,9 @@ EditText
 	  inNaira(context,price);
 	  inCedis(context,price);
 	  inRupee(context,price); etc
+	  
+	  
+	  #The library will format your price and add currency sign,based on the method.
 	
 	
 	
