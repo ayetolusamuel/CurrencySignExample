@@ -44,7 +44,6 @@ in your xml:
 	
 	
 	
-	#to capture your price
 	
 	
 	
