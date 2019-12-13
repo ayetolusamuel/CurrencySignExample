@@ -47,7 +47,7 @@ EditText
 	
 	in your code:
 	  Utils.inNaira(this,price_from_edittext); 
-	  There are many method, just call the method you want and pass context and the price.
+	  There are many methods, just call the method you want and pass context and the price.
 	  #list of method
 	  inNaira(context,price);
 	  inCedis(context,price);
