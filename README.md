@@ -39,7 +39,7 @@ EditText
 
     
    
-   make sure you include (android:inputType="number") to your price edittext.
+   make sure you include (android:inputType="numberDecimal") to your price edittext.
        
 	
 	
