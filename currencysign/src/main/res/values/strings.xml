@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">CurrencySign</string>
-    <string name="product_price"> ₦%1$s</string>
-    <string name="pattern">#,###.00</string>
+
+    <!--countries currencies sign and format-->
     <string name="naira_sign">₦%1$s</string>
     <string name="dollar_sign">$%1$s</string>
     <string name="euro_sign">€%1$s</string>
-    <string name="cedis_sign">¢%1$s</string>
+    <string name="cedis_sign">GH₵%1$s</string>
     <string name="pound_sign">£%1$s</string>
     <string name="rupee_sign">₹%1$s</string>
     <string name="yen_sign">¥%1$s</string>
@@ -33,8 +33,12 @@
     <string name="koruna_sign">Kč$%1$s</string>
     <string name="krone_sign">kr$%1$s</string>
     <string name="peso_dominican_sign">RD$$%1$s</string>
+
+   <!--the price format -->
     <string name="zeo_after_decimal">.00</string>
     <string name="empty" />
+    <string name="product_price"> ₦%1$s</string>
+    <string name="pattern">#,###.00</string>
 
 
 </resources>

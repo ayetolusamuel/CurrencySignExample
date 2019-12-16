@@ -1,7 +1,6 @@
 package com.codingwithset.currencysign;
 
 import android.content.Context;
-import android.util.Log;
 
 public class Utils {
 
