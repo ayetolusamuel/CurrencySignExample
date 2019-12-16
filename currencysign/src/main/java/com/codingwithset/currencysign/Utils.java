@@ -1,32 +1,37 @@
 package com.codingwithset.currencysign;
 
 import android.content.Context;
+import android.util.Log;
 
 public class Utils {
 
-
     public static String inNaira(Context context, String price) {
         String actualPrice = CurrencyFormat.formatPriceInThousand(context, price);
+        actualPrice = CurrencyFormat.truncateDecimalPrice(context,actualPrice);
         return String.format(context.getString(R.string.naira_sign), actualPrice);
     }
 
     public static String inDollar(Context context, String price) {
         String actualPrice = CurrencyFormat.formatPriceInThousand(context, price);
+        actualPrice = CurrencyFormat.truncateDecimalPrice(context,actualPrice);
         return String.format(context.getString(R.string.dollar_sign), actualPrice);
     }
 
     public static String inEuro(Context context, String price) {
         String actualPrice = CurrencyFormat.formatPriceInThousand(context, price);
+        actualPrice = CurrencyFormat.truncateDecimalPrice(context,actualPrice);
         return String.format(context.getString(R.string.euro_sign), actualPrice);
     }
 
     public static String inCedis(Context context, String price) {
         String actualPrice = CurrencyFormat.formatPriceInThousand(context, price);
+        actualPrice = CurrencyFormat.truncateDecimalPrice(context,actualPrice);
         return String.format(context.getString(R.string.cedis_sign), actualPrice);
     }
 
     public static String inYen(Context context, String price) {
         String actualPrice = CurrencyFormat.formatPriceInThousand(context, price);
+        actualPrice = CurrencyFormat.truncateDecimalPrice(context,actualPrice);
         return String.format(context.getString(R.string.yen_sign), actualPrice);
     }
 

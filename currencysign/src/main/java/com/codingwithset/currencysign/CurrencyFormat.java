@@ -12,5 +12,11 @@ import java.text.DecimalFormat;
         return formatter.format(format);
 
     }
+      static String truncateDecimalPrice(Context context,String actualPrice) {
+         if (actualPrice.contains(context.getString(R.string.zeo_after_decimal))){
+             actualPrice = actualPrice.replace(context.getString(R.string.zeo_after_decimal),context.getString(R.string.empty));
+         }
+         return actualPrice;
+     }
 
 }
