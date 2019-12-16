@@ -24,7 +24,7 @@ allprojects {
  
   ```shell
 dependencies {
-	        implementation 'com.github.ayetolusamuel:CurrencySignExample:1.0.1'
+	        implementation 'com.github.ayetolusamuel:CurrencySignExample:1.0.2'
 	}
 ```
 
