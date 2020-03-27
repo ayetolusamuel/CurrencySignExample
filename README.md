@@ -1,5 +1,6 @@
 # CurrencySignExample
 Android library that format price and add currency sign to the price
+### If the price consist of colon(:),comma(,) sign, the library will format the price and add currency sign.
 
 
 ## Prerequisites
