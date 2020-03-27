@@ -2,7 +2,10 @@ package com.codingwithset.currencysignexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,10 +14,14 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.codingwithset.currencysign.*;
+
+
 public class MainActivity extends AppCompatActivity {
 
     private String country;
 
+    private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.country_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
 
+
+        spinner.setAdapter(adapter);
 
         getCountry(txtPrice, spinner);
 
@@ -37,13 +45,46 @@ public class MainActivity extends AppCompatActivity {
             String price = edtPrice.getText().toString();
             if (!price.isEmpty()) {
                 String countryFromSpinner = country;
+                Log.d(TAG, "onCreate: country "+countryFromSpinner);
+                if(countryFromSpinner.equals(null)){
+                   return;
+                }
                 if (countryFromSpinner.equalsIgnoreCase(getString(R.string.nigeria))){
+                    txtPrice.setText(Utils.inNaira(this,price));
+                    return;
+                }
+                if (countryFromSpinner.equalsIgnoreCase(getString(R.string.ghana))){
+                    txtPrice.setText(Utils.inCedis(this,price));
+                    return;
 
                 }
+                if (countryFromSpinner.equalsIgnoreCase(getString(R.string.china))){
+                    txtPrice.setText(Utils.inYen(this,price));
+                    return;
+
+                }
+                if (countryFromSpinner.equalsIgnoreCase(getString(R.string.india))){
+                    txtPrice.setText(Utils.inRupee(this,price));
+
+                }
+
 
             }
 
         });
+
+
+
+//        String locale = getResources().getConfiguration().locale.getCountry();
+//        // System.out.println("country "+locale);
+//
+//        // Utils.inNaira()
+//        TelephonyManager tm = (TelephonyManager)this.getSystemService(Context.TELEPHONY_SERVICE);
+//        String countryCodeValue = tm.getNetworkCountryIso();
+//
+//        if (locale.equalsIgnoreCase(countryCodeValue)){
+//            System.out.println("Country : "+countryCodeValue);
+//        }
 
 
     }

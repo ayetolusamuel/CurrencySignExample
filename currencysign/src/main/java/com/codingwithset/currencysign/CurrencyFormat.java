@@ -8,6 +8,7 @@ class CurrencyFormat {
 
     static String formatPriceInThousand(Context context, String price) {
         price = price.replace(context.getString(R.string.comma), context.getString(R.string.empty));
+        price = price.replace(":","");
         double format = Double.parseDouble(price);
         DecimalFormat formatter = new DecimalFormat(context.getString(R.string.pattern));
         return formatter.format(format);

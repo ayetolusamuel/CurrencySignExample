@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">CurrencySignExample</string>
     <string name="nigeria">Nigeria</string>
+    <string name="ghana">Ghana</string>
+    <string name="china">China</string>
+    <string name="india">India</string>
 
-<string-array name="country_array">
+    <string-array name="country_array">
     <item>Select Country</item>
     <item>Nigeria</item>
-    <item>Albania </item>
-    <item>Aruba</item>
-    <item>Argentina</item>
+    <item>Ghana </item>
+    <item>China</item>
+    <item>India</item>
 </string-array>
 </resources>
